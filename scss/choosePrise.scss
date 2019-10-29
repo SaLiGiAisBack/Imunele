@@ -1,0 +1,76 @@
+.container{
+    .choosePrise-text {
+      padding-top: 75px;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .choosePrise-slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .swiper-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      p{
+        font-family: 'Lato', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 20px;
+        color: #424D57;
+        padding-top: 13px;
+      }
+      h1{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 66px;
+      }
+    }
+  .swiper-button-prev:after{
+    content: '';
+  }
+  .swiper-button-next:after{
+    content: '';
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .swiper-wrapper{
+    display: flex!important;
+    flex-direction: column!important;
+
+  }
+  .swiper-button-prev,
+  .swiper-button-next{
+    img{
+      display: none;
+    }
+  }
+  .swiper-button-prev:after{
+    content: '';
+  }
+  .swiper-button-next:after{
+    content: '';
+  }
+  .choosePrise-text{
+    h1{
+      font-size: 24px;
+      line-height: 34px;
+    }
+  }
+
+}

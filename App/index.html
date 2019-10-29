@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>Kia</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content col-12">
+              <!-- Modal Header-->
+              <div class="modal-header col-12">
+                <h1>Личный кабинет</h1>
+                <button class="close" type="button" data-dismiss="modal">&times;</button>
+              </div>
+              <!-- Modal body-->
+              <div class="modal-body col-12">
+                <div class="name-info col-12">
+                  <div class="col-3"><span>Имя</span>
+                    <p>Григорий Измайлов</p>
+                  </div>
+                  <div class="col-3"><span>Телефон</span>
+                    <p>+7 (987) 654-32-10</p>
+                  </div>
+                  <div class="col-3"><span>E-mail</span>
+                    <p>promo.email@j7sok.ru</p>
+                  </div>
+                  <div class="col-2"></div>
+                  <div class="col-3"><a href="#"><img src="img/pen.png"></a></div>
+                </div>
+                <div class="my-checks col-12">
+                  <div class="col-3 d-flex justify-content-between align-items-center">
+                    <p>Мои чеки</p><span>3 чека</span>
+                  </div>
+                  <div class="col-5"></div>
+                  <div class="col-4 d-flex justify-content-end"><a href="#">Добавить чек</a></div>
+                </div>
+                <table class="table col-11 table-borderless">
+                  <thead>
+                    <th scope="col-3">
+                      <p>Чеки</p>
+                    </th>
+                    <th scope="col-3">
+                      <p>Номер чека</p>
+                    </th>
+                    <th scope="col-3">
+                      <p>Чек загружен</p>
+                    </th>
+                    <th scope="col-3">
+                      <p>Статус чека</p>
+                    </th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Чек 1</th>
+                      <td>849583549</td>
+                      <td>1 сентября 2019</td>
+                      <td>Чек принят</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Чек 2</th>
+                      <td>849583549</td>
+                      <td>2 сентября 2019</td>
+                      <td>Чек принят</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Чек 3</th>
+                      <td>849583549</td>
+                      <td>3 сентября 2019</td>
+                      <td>Чек принят</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="view-more col-12"><a href="#"><span>Показать все чеки</span><img src="img/dropdown.png"
+                                                                                             height="8" width="14"/></a></div>
+                <div class="my-prises col-12">
+                  <div class="row text-row">
+                    <div class="my-prises-text col-3">
+                      <h1>Мои призы</h1>
+                      <p>3 приза</p>
+                    </div>
+                  </div>
+                  <div class="row presents-list">
+                    <div class="my-prises-wins col-12">
+                      <div class="col-3 my-balance">
+                        <p>Мой баланс</p>
+                        <h2>10 000₽</h2><a href="#">Вывести на счет</a>
+                      </div>
+                      <div class="col-3 prev-price">
+                        <div class="money-prise">500₽</div>
+                        <h3>Ваш приз - 500₽</h3>
+                        <p>2 сентября 2019</p>
+                      </div>
+                      <div class="col-2 kettle-prise"><img src="img/kettle.png">
+                        <h2>Холодильник</h2>
+                        <p>2 сентября 2019</p>
+                      </div>
+                      <div class="col-2 kettle-prise"><img src="img/kettle.png">
+                        <h2>Холодильник</h2>
+                        <p>2 сентября 2019</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="nav-block col-lg-2 col-md-3"><a href="#"><img class="logo" src="img/imunele.png" alt="Imunele"></a></div>
+          <div class="col-lg-4">
+            <nav>
+              <ul class="menu">
+                <li><a href="#">Об акции</a></li>
+                <li><a href="#">Призы</a></li>
+                <li><a href="#">Победители</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-lg-2"></div>
+          <div class="cabinet col-lg-4 col-md-2">
+            <ul class="knopkiblyat">
+              <li><a href="#" data-toggle="modal" data-target="#myModal">Личный кабинет</a></li>
+              <li><a href="#">Добавить чек</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="prise-text col-12">
+            <h1>Лето с крепким иммунитетом!</h1>
+            <p>Выиграй призы для всей семьи от Иму-защитников!</p><a href="#">Добавить чек</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="swiper-container col-12 winPrise-slider">
+            <div class="swiper-wrapper winPrise-wrapper">
+              <div class="swiper-slide"><img src="img/logo-perekrestok.png" alt="Перекресток Лого">
+                <p>Регистрация чеков<br><span>29.08.2019 - 30.09.2019</span></p>
+              </div>
+              <div class="swiper-slide"><img src="img/logo-perekrestok.png" alt="Перекресток Лого">
+                <p>Регистрация чеков<br><span>29.08.2019 - 30.09.2019</span></p>
+              </div>
+              <div class="swiper-slide"><img src="img/logo-perekrestok.png" alt="Перекресток Лого">
+                <p>Регистрация чеков<br><span>29.08.2019 - 30.09.2019</span></p>
+              </div>
+            </div>
+            <div class="swiper-button-next nextButton"></div>
+            <div class="swiper-button-prev prevButton"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="prise-more col-12">
+            <p>Узнать подробнее</p><img src="img/Vector.png" alt="Стрелка">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <div class="container number-container">
+        <div class="row">
+          <div class="numbers-block col-lg-4">
+            <div class="buy">
+              <div class="number-one h1">1
+                <span:after>
+                  <div class="svg">
+                     <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.9154 0.391022C24.4113 -0.130341 23.5724 -0.130341 23.0507 0.391022C22.5466 0.89477 22.5466 1.73318 23.0507 2.23575L32.5057 11.6849H1.3054C0.578088 11.686 0 12.2638 0 12.9906C0 13.7175 0.578088 14.314 1.3054 14.314H32.5057L23.0507 23.7455C22.5466 24.2668 22.5466 25.1064 23.0507 25.609C23.5724 26.1303 24.4125 26.1303 24.9154 25.609L36.6087 13.923C37.1304 13.4192 37.1304 12.5808 36.6087 12.0782L24.9154 0.391022Z" fill="#E6E8EA"/>
+</svg>
+                  </div>
+                </span:after>
+              </div>
+              <div class="number-heading h2">Купи Имунеле</div>
+              <div class="number-txt p">Купи 6 любых бутылочек Имунели<br> в магазине</div>
+            </div>
+          </div>
+          <div class="numbers-block col-lg-4">
+            <div class="register">
+              <div class="number-one h1">2
+                <span:after>
+                  <div class="svg1">
+                     <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.9154 0.391022C24.4113 -0.130341 23.5724 -0.130341 23.0507 0.391022C22.5466 0.89477 22.5466 1.73318 23.0507 2.23575L32.5057 11.6849H1.3054C0.578088 11.686 0 12.2638 0 12.9906C0 13.7175 0.578088 14.314 1.3054 14.314H32.5057L23.0507 23.7455C22.5466 24.2668 22.5466 25.1064 23.0507 25.609C23.5724 26.1303 24.4125 26.1303 24.9154 25.609L36.6087 13.923C37.1304 13.4192 37.1304 12.5808 36.6087 12.0782L24.9154 0.391022Z" fill="#E6E8EA"/>
+</svg>
+                  </div>
+                </span:after>
+              </div>
+              <div class="number-heading h2">Зарегистрируй чек</div>
+              <div class="number-txt p">Зарегистрируй чек на сайте для<br> участия в акции</div>
+            </div>
+          </div>
+          <div class="numbers-block col-lg-4">
+            <div class="stock">
+              <div class="number-one h1">3</div>
+              <div class="number-heading h2">Участвуй в акции</div>
+              <div class="number-txt p">Загрузив чек ты автомотически<br> учавствуешь в акции</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="numbers-block2 col-lg-2"></div>
+          <div class="numbers-block2 col-lg-4">
+            <div class="win">
+              <div class="number-one h1">4
+                <span:after>
+                  <div class="svg2">
+                     <svg width="37" height="26" viewBox="0 0 37 26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24.9154 0.391022C24.4113 -0.130341 23.5724 -0.130341 23.0507 0.391022C22.5466 0.89477 22.5466 1.73318 23.0507 2.23575L32.5057 11.6849H1.3054C0.578088 11.686 0 12.2638 0 12.9906C0 13.7175 0.578088 14.314 1.3054 14.314H32.5057L23.0507 23.7455C22.5466 24.2668 22.5466 25.1064 23.0507 25.609C23.5724 26.1303 24.4125 26.1303 24.9154 25.609L36.6087 13.923C37.1304 13.4192 37.1304 12.5808 36.6087 12.0782L24.9154 0.391022Z" fill="#E6E8EA"/>
+</svg>
+                  </div>
+                </span:after>
+              </div>
+              <div class="number-heading h2">Выйграй приз</div>
+              <div class="number-txt p">Выбирай призы и выигрывай! Розыгрыш<br> проходит каждые 7 дней</div>
+            </div>
+          </div>
+          <div class="numbers-block col-lg-4">
+            <div class="prize">
+              <div class="number-one h1">5</div>
+              <div class="number-heading h2">Участвуй в акции</div>
+              <div class="number-txt p">Выбирай призы и выигрывай! Розыгрыш<br> проходит каждые 7 дней</div>
+            </div>
+          </div>
+          <div class="numbers-block2 col-lg-2"></div>
+        </div>
+      </div>
+    </div>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="choosePrise-text col-12">
+            <h1>Выбирай призы!</h1>
+          </div>
+        </div>
+        <div class="swiper-container choosePrise-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col-lg-3 col-sm-12"><img src="img/kettle.png" alt="kettle">
+              <p>Чайник</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12"><img src="img/kettle.png" alt="kettle">
+              <p>Тостер</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12"><img src="img/kettle.png" alt="kettle">
+              <p>Холодильник</p>
+            </div>
+          </div>
+          <div class="swiper-button-next nextButton"></div>
+          <div class="swiper-button-prev prevButton"></div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="register-check-main col-12">
+            <h1>Зарегистрируй чек</h1>
+            <p>Для участия в акции добавь чек, загрузив его на сайт, и выбирай призы! Результаты розыграша проводятся по субботам каждую неделю.</p><a href="#">Добавить чек</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="ourWinners-text col-12">
+            <h1>Наши победители</h1>
+            <p>Каждую неделю разыгрываются по 10 призов на выбор и один главный приз - iPhone XS Max</p>
+          </div>
+        </div>
+        <div class="swiper-container ourWinners-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/toster.png" alt="toster">
+              <h2>Все призы</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/kettle.png" alt="kettle">
+              <h2>Чайник</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/kettle.png" alt="kettle">
+              <h2>Чайник</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/kettle.png" alt="kettle">
+              <h2>Чайник</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/toster.png" alt="toster">
+              <h2>Все призы</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/kettle.png" alt="kettle">
+              <h2>Чайник</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/kettle.png" alt="kettle">
+              <h2>Чайник</h2>
+              <p>32 победителя</p>
+            </div>
+            <div class="swiper-slide col-lg-3 col-sm-12 slide-winners"><img src="img/kettle.png" alt="kettle">
+              <h2>Чайник</h2>
+              <p>32 победителя</p>
+            </div>
+          </div>
+          <div class="swiper-button-next nextButton"></div>
+          <div class="swiper-button-prev prevButton"></div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="tabContainer">
+          <div class="buttonContainer">
+            <button onclick="showPanel(0,'#fff')">1-7 августа</button>
+            <button onclick="showPanel(1,'#fff')">8-15 августа</button>
+            <button onclick="showPanel(2,'#fff')">16-23 августа</button>
+            <button onclick="showPanel(3,'#fff')">24-31 августа</button>
+          </div>
+          <div class="tabPanel">
+            <div class="row tabrow">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 tab-first">
+                <p>21.09.2019</p>
+                <p>Сергей</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                <p>Электросамокат</p>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="row tabrow">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 tab-first">
+                <p>16.09.2019</p>
+                <p>Наталья</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                <p>Сертификат в SPA</p>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="row tabrow">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 tab-first">
+                <p>16.09.2019</p>
+                <p>Роман</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                <p>Цифровая камера</p>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="row tabrow">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 tab-first">
+                <p>09.09.2019</p>
+                <p>Екатерина</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                <p>Гироскутер</p>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+            <div class="row tabrow">
+              <div class="col-lg-2"></div>
+              <div class="col-lg-8 tab-first">
+                <p>09.09.2019</p>
+                <p>Михаил</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                <p>Мини проектор</p>
+              </div>
+              <div class="col-lg-2"></div>
+            </div>
+          </div>
+          <div class="tabPanel">
+            <tabs>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>21.09.2019</p>
+                  <p>Сергей</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Электросамокат</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>16.09.2019</p>
+                  <p>Наталья</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Сертификат в SPA</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>16.09.2019</p>
+                  <p>Роман</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Цифровая камера</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>09.09.2019</p>
+                  <p>Екатерина</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Гироскутер</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>09.09.2019</p>
+                  <p>Михаил</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Мини проектор</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+            </tabs>
+          </div>
+          <div class="tabPanel">
+            <tabs>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>21.09.2019</p>
+                  <p>Сергей</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Электросамокат</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>16.09.2019</p>
+                  <p>Наталья</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Сертификат в SPA</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>16.09.2019</p>
+                  <p>Роман</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Цифровая камера</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>09.09.2019</p>
+                  <p>Екатерина</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Гироскутер</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>09.09.2019</p>
+                  <p>Михаил</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Мини проектор</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+            </tabs>
+          </div>
+          <div class="tabPanel">
+            <tabs>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>21.09.2019</p>
+                  <p>Сергей</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Электросамокат</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>16.09.2019</p>
+                  <p>Наталья</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Сертификат в SPA</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>16.09.2019</p>
+                  <p>Роман</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Цифровая камера</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>09.09.2019</p>
+                  <p>Екатерина</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Гироскутер</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+              <div class="row tabrow">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 tab-first">
+                  <p>09.09.2019</p>
+                  <p>Михаил</p><a href="personalemail@imunele.ru">personalemail@imunele.ru</a>
+                  <p>Мини проектор</p>
+                </div>
+                <div class="col-lg-2"></div>
+              </div>
+            </tabs>
+          </div>
+          <div class="row winners">
+            <div class="col-lg-12 winners-col"><a href="#"><span>К полному списку победителей</span><img src="img/Vector.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../script.js"></script>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="answer-text">
+          <h1>Вопросы-ответы</h1>
+        </div>
+        <div class="answer-section col-12">
+          <button class="accordion col-8">Где и когда проводится акция?<img class="rotate" src="img/dropdown.png"></button>
+          <div class="panel col-8">
+            <p>
+              Акция проводится 11 апреля по 30 июня 2019 года во всех магазинах сети «Пятерочка».
+              Период совершения покупки и регистрации чеков с 8 часов 11 апреля по 22 часа 2 мая
+              2019 года (по Московскому времени).
+            </p>
+          </div>
+          <button class="accordion col-8">Кто может принимать участие в акции?<img class="rotate" src="img/dropdown.png"></button>
+          <div class="panel col-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button class="accordion col-8">Как зарегистрироваться на сайте?<img class="rotate" src="img/dropdown.png"></button>
+          <div class="panel col-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button class="accordion col-8">Как зарегистрироваться на сайте?<img class="rotate" src="img/dropdown.png"></button>
+          <div class="panel col-8">
+            <p>
+              Как зарегистрировать чек на сайте?Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="footer block col-lg-7"><a href="#">Условия акции</a><a href="#">FAQ</a><a href="#">Пользовательское соглашение</a><a href="#">Обратная связь</a></div>
+          <div class="col-lg-1"></div>
+          <div class="footer-phone col-lg-4">
+            <p>Горячая линия:</p><a href="tel:+78142332211"><span>+7(814)-233-22-11</span></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="footer-logo"><a href="#"><img src="img/imunele.png"></a></div>
+          </div>
+          <div class="col-lg-5">
+            <div class="footer-pepsico">
+              <p>© 2019 ООО «Пепсико Холдингс». Все права защищены.</p>
+            </div>
+          </div>
+          <div class="col-lg-5"></div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

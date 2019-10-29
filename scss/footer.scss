@@ -1,0 +1,65 @@
+
+.footer {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato', sans-serif;
+  p{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #424D57;
+  }
+}
+.footer-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+
+  }
+  a{
+    color: #424D57;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+.footer-logo {
+
+  opacity: 0.3;
+
+}
+
+.footer-pepsico{
+  p{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: normal;
+  }
+}
+.footer.block a{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #424D57;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+
+}
+.active {
+  color:red!important;
+}

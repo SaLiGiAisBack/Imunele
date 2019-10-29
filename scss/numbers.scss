@@ -1,0 +1,45 @@
+.number-container{
+  padding-top: 40px;
+}
+.number-one {
+  display: flex;
+  justify-content: center;
+  font-family: Lato;
+  font-size: 28px;
+  color: #424D57;
+}
+.number-heading {
+  display: flex;
+  justify-content: center;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 24px;
+  color: #424D57;
+  font-weight: bold;
+}
+.number-txt {
+  display: flex;
+  justify-content: center;
+  font-family: Lato;
+  color: #424D57;
+  text-align: center;
+}
+.svg {
+
+  position:absolute;
+  right:-10px;
+}
+.svg1 {
+  position:absolute;
+  right:-20px;
+}
+.svg2 {
+  position:absolute;
+  right: -10px;
+}
+.win {
+  padding-top: 100px;
+}
+.prize {
+  padding-top: 100px;
+}

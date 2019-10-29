@@ -1,0 +1,106 @@
+.container-fluid{
+  background-color: #FFFFFF;
+}
+.ourWinners-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  h1{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 66px;
+  }
+  p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 460px;
+    color: #424D57;
+    text-align: center;
+  }
+}
+.ourWinners-slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .swiper-slide{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+  .swiper-wrapper:first-child{
+    margin-left:100px;
+  }
+ }
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.slide-winners{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid #F7F9FA;
+  border-radius: 5px;
+  max-width: 200px;
+  height: 270px;
+  img{
+    max-height: 126px;
+    max-width: 132px;
+  }
+  h2{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #424D57;
+    padding-top: 21px;
+  }
+  p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #424D57;
+    padding: 0;
+  }
+}
+.slide-winners:hover{
+  background-color: #F7F9FA;
+}
+.nextButton{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F7F9FA;
+  background-image: url("../img/slidenext.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.prevButton{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #F7F9FA;
+  background-image: url("../img/slideprev.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

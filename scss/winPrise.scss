@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container-fluid:nth-child(2) {
+  background: #F7F9FA url("../img/figure.png") no-repeat 70% 20%;
+}
+.container-fluid:nth-child(5) {
+  background: #F7F9FA;
+}
+.container-fluid{
+  .prise-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 228px;
+    h1{
+      font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 3em;
+      line-height: 56px;
+      color: #424D57;
+    }
+    p{
+      font-family: 'Lato', sans-serif;
+      font-size: 1.5em;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 40px;
+      color: #424D57;
+      padding-top: 16px;
+      padding-bottom: 30px;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 266px;
+      width: 100%;
+      padding:17px;
+      background: #CA001A;
+      border-radius: 5px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+    a:active,:link{
+      color: #fff;
+    }
+    a:hover{
+      background-color: #065756;
+    }
+  }
+  .winPrise-slider{
+      display: flex;
+      padding-top: 145px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    .winPrise-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+      }
+      p{
+        padding-top: 18px;
+        font-family: 'Lato', sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        color: #A2A7AA;
+        padding-bottom: 48px;
+    }
+      .swiper-button-next,
+           .swiper-button-prev{
+             display: none;
+           }
+      .swiper-button-prev:after{
+        content: '';
+      }
+      .swiper-button-next:after{
+        content: '';
+      }
+  }
+  .prise-more{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 27px;
+    p{
+      font-family: 'Lato', sans-serif;
+      color: #424D57;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .prise-text{
+    h1{
+      font-size: 1.9em!important;
+      line-height: 34px!important;
+    }
+    p{
+      font-size: 14px!important;
+      line-height: 20px!important;
+    }
+    a{
+      width: 166px!important;
+      font-size: 10px!important;
+      line-height: 20px!important;
+    }
+  }
+  .prise-more{
+    display: none!important;
+  }
+  .winPrise-wrapper{
+    display: flex;
+    flex-direction: row!important;
+  }
+  .swiper-button-next,
+    .swiper-button-prev{
+    display: flex!important;
+  }
+
+}
