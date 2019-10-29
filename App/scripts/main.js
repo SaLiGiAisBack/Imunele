@@ -89,15 +89,18 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-$('.menuitems a').on('click', function(){
-    $('.menuitems a').removeClass('active');
+// $('.menuitems a').on('click', function(){
+// //     $('.menuitems a').removeClass('active');
+// //     $(this).addClass('active');
+// //
+// // });
+// // $('.menuitems li').on('click', function(){
+// //     if($('.menuitems a').hasClass('active')){
+// //         $('.menuitems li').removeClass('active-li');
+// //         $(this).addClass('active-li');
+// //     }
+// // });
+
+$('.menuitems a').each(function(){
     $(this).addClass('active');
-
 });
-$('.menuitems li').on('click', function(){
-    if($('.menuitems a').hasClass('active')){
-        $('.menuitems li').removeClass('active-li');
-        $(this).addClass('active-li');
-    }
-});
-
