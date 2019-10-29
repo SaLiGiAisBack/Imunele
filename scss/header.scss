@@ -6,99 +6,109 @@
   opacity: 0.3;
   padding-top: 28px;
 }
-.menu {
+.menuitems{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 40px;
-  list-style: none;
-  font-family: 'Lato', sans-serif;
+  justify-content: center;
+  padding-left: 53px;
 
-  a:nth-child(1) {
+}
+.menuitems ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
 
-    color: #000000;
-    text-decoration: none;
+  li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
   }
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #424D57;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+  }
+}
+.myProfile{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 165px;
 
+
+  a:nth-child(1){
+
+    color: #424D57;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 35px 14px;
+    background: #F1F2F3;
+    border-radius: 5px;
+    width: 194px;
+    height: 46px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+  }
   a:nth-child(2) {
-    color: #000000;
+    color: #424D57;
     text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 12px 35px 14px;
+    background: #F1F2F3;
+    border-radius: 5px;
+    width: 170px;
+    height: 46px;
+    display: flex;
+    text-align: center;
+    align-items: center;
   }
-
-  a:nth-child(3) {
-    color: #000000;
-    padding-left: 28px;
-    text-decoration: none;
-  }
-
   a:hover{
-    color: #CA001A;
+    background: #CA001A;
+    border-radius: 5px;
+    color: #FFFFFF;
   }
+}
+.imagebcg {
+  opacity: 0.3;
+}
+.navmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+
 }
 .active {
-  color:#CA001A!important;
+  color: #CA001A !important;
 }
-.cabinet {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 27px;
-  width: 100%;
-  .knopkiblyat{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    li:nth-child(1) {
-      list-style: none;
-      a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 266px;
-        width: 100%;
-        padding:17px;
-        background: #F1F2F3;
-        border-radius: 5px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        color: #424D57;
-        text-decoration: none;
-      }
-      a:hover{
-        background-color: #CA001A;
-        color: #FFFFFF;
-      }
-    }
-    li:nth-child(2) {
-      list-style: none;
-      a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        max-width: 266px;
-        width: 100%;
-        padding:17px;
-        background:#F1F2F3 ;
-        border-radius: 5px;
-        font-family: 'Lato', sans-serif;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
-        color: #424D57;
-        text-decoration: none;
-      }
-      a:hover{
-        background-color: #CA001A;
-        color: #FFFFFF;
-      }
-    }
-
-  }
+.active-li{
+  border-bottom:2px solid #424D57;
 
 }
+
+
 .number-one {
   display: flex;
   justify-content: center;
@@ -224,12 +234,19 @@ table{
     background: #656B71;
     border-collapse: collapse;
     th{
-      font-family: 'Lato', sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 24px;
-      color: #FFFFFF;
-      word-break: break-all;
+      p{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        margin: 0;
+        word-break: break-all;
+        padding: 15px 0;
+      }
     }
     th:first-child{
       border-radius: 5px 0 0 0;
@@ -247,6 +264,19 @@ table{
       line-height: 24px;
       color: #424D57;
       word-break: break-all;
+    }
+    tr:nth-child(odd){
+      background: #F2F4F6;
+    }
+    tr:nth-child(even){
+      background: #F7F9FA;
+    }
+    td{
+      p{
+        display: inline-block;
+        text-decoration-line: underline;
+      }
+
     }
   }
 }

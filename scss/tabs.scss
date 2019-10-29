@@ -11,6 +11,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  padding-top: 45px;
   .tabPanel{
     display: flex;
     justify-content: space-between;
@@ -39,7 +40,7 @@
       font-size: 18px;
       margin-right: 36px;
     }
-    button:hover {
+    button:hover,:active,:focus {
       color: #CA001A;
       border-bottom:1px dashed #000;
     }
@@ -49,13 +50,12 @@
 button {
     background-color: #ffffff;
     color: #A2A7AA;
-
-
   }
 .tab-first{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding-left: 15px;
   padding-right: 70px;
 
 
@@ -67,19 +67,35 @@ button {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #424D57;
     width: 100%;
     margin: 0;
-  padding-bottom: 41px;
+  padding-top: 30px;
 
 }
 .tab-first a{
   color:gray;
   text-decoration: none;
   color: #424D57;
+  padding-left: 115px;
+  padding-right: 90px;
+  padding-top: 30px;
+}
+.tabrow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
   padding-bottom: 41px;
 }
+.tabrow:nth-child(odd){
+  background: #F7F9FA;
+}
+.tabrow:nth-child(even){
+  background: #F2F4F6;
+}
 .winners{
+  padding-bottom: 71px;
   .winners-col{
     span{
       border-bottom: 1px dashed black;

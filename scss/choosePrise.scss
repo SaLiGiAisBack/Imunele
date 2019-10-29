@@ -5,13 +5,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      h1{
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: calc(14px + (40 - 14) * ((100vw - 300px) / (1600 - 300)));
+        line-height: 66px;
+        display: flex;
+        align-items: center;
+        color: #424D57;
+      }
 
     }
     .choosePrise-slider {
       display: flex;
       justify-content: center;
       align-items: center;
-
+      padding-bottom: 74px;
       .swiper-wrapper {
         display: flex;
         justify-content: space-between;
@@ -23,14 +33,19 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        height: 100%;
       }
       p{
         font-family: 'Lato', sans-serif;
         font-weight: bold;
         font-size: 24px;
         line-height: 20px;
+        height: 100%;
         color: #424D57;
         padding-top: 13px;
+        margin: 0;
+        display: flex;
+        align-items: center;
       }
       h1{
         font-family: 'Lato', sans-serif;

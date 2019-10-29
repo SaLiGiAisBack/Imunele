@@ -1,4 +1,6 @@
-
+.footer-container{
+  background: #F1F2F3;
+}
 .footer {
   padding-top: 60px;
   display: flex;
@@ -18,7 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 60px;
   p{
     font-style: normal;
     font-weight: normal;
@@ -26,7 +28,18 @@
     line-height: 20px;
     font-family: 'Lato', sans-serif;
     margin: 0;
+    color: #424D57;
 
+  }
+  span{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #424D57;
   }
   a{
     color: #424D57;
@@ -38,16 +51,20 @@
 
   opacity: 0.3;
 
-}
 
+}
 .footer-pepsico{
+  padding-left:40px;
   p{
-    padding-top: 20px;
+    padding-top: 15px;
     display: flex;
     align-items: center;
     font-size: 14px;
     line-height: 20px;
     font-weight: normal;
+    font-style: normal;
+    font-family: 'Lato', sans-serif;
+    color: #A9ACB3;
   }
 }
 .footer.block a{

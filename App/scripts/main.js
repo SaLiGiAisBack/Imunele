@@ -76,7 +76,7 @@ let i;
 
 for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
+        this.classList.toggle("active-answer");
         this.classList.toggle("rotate-image");
         let panel = this.nextElementSibling;
         if (panel.style.display === "block") {
@@ -89,3 +89,15 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+$('.menuitems a').on('click', function(){
+    $('.menuitems a').removeClass('active');
+    $(this).addClass('active');
+
+});
+$('.menuitems li').on('click', function(){
+    if($('.menuitems a').hasClass('active')){
+        $('.menuitems li').removeClass('active-li');
+        $(this).addClass('active-li');
+    }
+});
+
